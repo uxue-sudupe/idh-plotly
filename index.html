@@ -3,19 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Nota de prensa: Evolución del IDH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
+      margin: 40px auto;
+      max-width: 1000px;
       line-height: 1.6;
       background-color: #f9f9f9;
+      padding: 0 20px;
+      color: #333;
     }
     h1 {
       color: #00416a;
     }
     iframe {
+      display: block;
+      width: 100%;
       margin: 30px 0;
       border: none;
+    }
+    p {
+      text-align: justify;
     }
   </style>
 </head>
@@ -25,15 +34,18 @@
 
   <p><strong>Vitoria-Gasteiz, abril de 2025</strong>. A lo largo de las últimas décadas, el Índice de Desarrollo Humano (IDH) ha sido una de las principales métricas utilizadas por organismos internacionales para evaluar el progreso de los países más allá del crecimiento económico. Este indicador combina tres dimensiones fundamentales: salud, educación e ingresos.</p>
 
-  <p>En este gráfico interactivo se puede observar cómo ha evolucionado el IDH de todos los países del mundo desde 1990 hasta la actualidad. Se ha incluido también una categoría específica para los países que no están agrupados en regiones oficiales por Naciones Unidas, bajo el nombre de <em>"Países adelantados"</em>.</p>
+  <p>En el siguiente gráfico interactivo se puede observar cómo ha evolucionado el IDH de todos los países del mundo desde 1990 hasta la actualidad. Se ha incluido también una categoría específica para los países que no están agrupados en regiones oficiales por Naciones Unidas, bajo el nombre de <em>"Países adelantados"</em>.</p>
 
-  <!-- Aquí insertamos el gráfico -->
-  <iframe src="grafico_idh.html" width="100%" height="700px"></iframe>
+  <!-- Gráfico 1: HDI -->
+  <iframe src="grafico_idh.html" height="1200px" title="Gráfico de evolución del IDH por país"></iframe>
 
   <p>Este tipo de visualizaciones permite analizar de forma clara qué países han mejorado más rápidamente y cuáles se han estancado o incluso retrocedido.</p>
-  
-  <!-- Aquí insertamos el gráfico 2 -->
-<iframe src="grafico_gnipc_le.html" width="100%" height="800px" style="border:none;"></iframe>
+
+  <p>A continuación, se presenta otro gráfico que muestra la relación entre el ingreso nacional bruto per cápita y la esperanza de vida. En él se destaca a España en color amarillo.</p>
+
+  <!-- Gráfico 2: gnipc vs le -->
+  <iframe src="grafico_gnipc_le.html" height="800px" title="Relación entre ingreso per cápita y esperanza de vida"></iframe>
 
 </body>
 </html>
+
